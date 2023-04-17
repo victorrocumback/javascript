@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body{
+            font: normal 20px sans-serif;
+        }
+
+        .textos{
+            width: 150px;
+            height: 25px;
+        }
+
+        #botao-somar{
+            width: 80px;
+            height: 25px;
+            background-color: rgb(233, 133, 133);
+            color: white;
+            border: solid 1px darkgray;
+        }
+
+        #res{
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" class="textos" name="valor1" id="valor1" placeholder="digite o primeiro número"> +
+    <input type="number" class="textos" name="valor2" id="valor2" placeholder="digite o segundo número">
+
+    <input type="button" id="botao-somar" value="Somar" onclick="somar()">
+
+    <div id="res"></div>
+
+    <script>
+
+    function somar(){
+        var txt1 = window.document.getElementById('valor1');
+        var txt2 = window.document.getElementById('valor2');
+        var res = window.document.getElementById('res');
+        
+        var numero1 = Number(txt1.value)
+        var numero2 = Number(txt2.value)
+        var soma = numero1 + numero2
+     
+        res.innerText = `A soma de ${numero1} + ${numero2} é igual a ${soma} :) `
+    }
+
+   
+
+    </script>
+</body>
+</html>

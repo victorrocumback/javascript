@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(87, 186, 219);
+            color: white;
+            font: none 28pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="botao">Clique em mim</div>
+
+    <script>
+        function mostra(frase){
+            document.write(frase)
+        }
+
+        document.write('Olá Mundo!')
+
+        var titulo = document.getElementsByTagName('h1')[0]
+        titulo.innerText = 'Chama meu consagrado'
+        titulo.style.width = '170px'
+        titulo.style.background = 'black'
+
+        var b1 = document.getElementsByClassName('botao')[0]
+        b1.style.background = 'lightblue'
+        b1.style.color = 'black'
+        b1.style.width = '200px'
+        b1.style.textAlign = 'center'
+        b1.style.border = '1px solid black'
+        b1.style.borderRadius = '5px'
+        b1.style.margin = '2px 1px 2px 1px'
+        b1.style.cursor = 'pointer'
+
+    </script>
+</body>
+</html>
