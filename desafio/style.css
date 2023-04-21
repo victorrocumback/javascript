@@ -30,3 +30,7 @@ footer {
     color: white;
     text-transform: uppercase;
 }
+
+select {
+    width: 150px;
+}
