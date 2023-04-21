@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input {
+            width: 100px;
+            height:70px;
+            font-size: 22px;
+        }
+        p {
+            text-align: center;
+        }
+        #limpar {
+            width: 50px;
+            height: 50px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contador de cliques</h1>
+    <p>
+        <input type="button" value="Ação 1" onclick="acao1()">
+        <input type="button" value="Ação 2" onclick="acao2()">
+        <input type="button" value="Ação 3" onclick="acao3()">
+        <input type="button" value="Ação 4" onclick="acao4()">
+        <input id="limpar" type="button" value="Limpar" onclick="limpar()">
+    </p>
+    <div id="result">
+        <p>Aqui vou registrar suas ações com os botões acima: </p>
+    </div>
+
+    <script>
+        var res = document.getElementById('result')
+        
+        function acao1() {
+            res.innerHTML += '<p>Clicou no 1º BOTÃO </p>'
+        }
+
+        function acao2() {
+            res.innerHTML += '<p>Clicou no 2º BOTÃO </p>'
+        }
+        function acao3() {
+            res.innerHTML += '<p>Clicou no 3º BOTÃO </p>'
+        }
+        function acao4() {
+            res.innerHTML += '<p>Clicou no 4º BOTÃO </p>'
+        }
+
+        function limpar() {
+            res.innerHTML = ''
+        }
+
+    </script>
+</body>
+</html>
