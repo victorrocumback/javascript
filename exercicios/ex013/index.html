@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input {
+            width: 250px;
+            height:70px;
+            font-size: 22px;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Maior valor</h1>
+    <p>
+        <input type="button" value="Clique em mim" onclick="contar()">
+
+    </p>
+    <div id="result">
+
+    </div>
+
+    <script>
+        function contar() {
+        var num1 = Number(window.prompt('Digite o primeiro valor'))
+        var num2 = Number(window.prompt('Digit o outro valor'))
+        var res = document.getElementById('result')
+
+        
+        if (num1 > num2){
+            var maior = num1
+        }else {
+            var maior = num2
+        }
+
+        res.innerHTML = `Analisando os valores ${num1} e ${num2}, o maior valor é ${maior}`
+        }
+  
+
+
+    </script>
+</body>
+</html>

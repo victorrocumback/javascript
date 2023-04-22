@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input {
+            width: 250px;
+            height:70px;
+            font-size: 22px;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analisando data e hora do sistema</h1>
+    <p>
+        <input type="button" value="Iniciar análise" onclick="analisar()">
+
+    </p>
+    <div id="result">
+
+    </div>
+
+    <script>
+
+        function analisar() {
+            var agora = new Date()
+            var dia = agora.getDate()
+            var mes = agora.getMonth()
+        }
+
+
+    </script>
+</body>
+</html>

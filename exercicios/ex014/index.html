@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input {
+            width: 250px;
+            height:70px;
+            font-size: 22px;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Interagindo com o sistema</h1>
+    <p>
+        <input type="button" value="Clique em mim" onclick="interagir()">
+
+    </p>
+    <div id="result">
+
+    </div>
+
+    <script>
+
+        function interagir() {
+            var sist = Date()
+            var res = document.getElementById('result')
+
+            res.innerHTML = `O que eu recebi do sistema foi <mark>${sist}</mark>`
+        }
+            
+
+
+    </script>
+</body>
+</html>
