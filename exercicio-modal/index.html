@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        body {
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+
+        .container {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>I Love Modal</h1>
+
+    <div class="container">
+        <h2>This is my message!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam id iure aliquam! Incidunt beatae sit cum, reiciendis nesciunt magni ipsam, assumenda nihil unde natus, alias harum tempora necessitatibus enim ut.</p>
+        <input type="button" value="Hide" onclick="onClose()">
+    </div>
+    <input type="button" value="Show" onclick="onOpen()" id="button">
+
+
+
+    <script>
+        const modal = document.querySelector('.container')
+        const btn = document.getElementById('button')
+
+        function onOpen() {
+            modal.classList.add("active")
+            btn.classList.add("container")
+        }
+
+        function onClose() {
+            modal.classList.remove("active")
+            btn.classList.remove("container")
+        }
+    </script>
+</body>
+</html>
